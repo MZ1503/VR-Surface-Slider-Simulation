@@ -3,7 +3,7 @@ A Unity 3D Virtual Reality simulation developed as a B.Tech final project, featu
 
 Markdown
 # VR Surface Slider (Unity 3D & C#)
-[cite_start]This project is a stereoscopic Virtual Reality (VR) skiing simulation developed for my **Bachelor of Technology in IT**[cite: 107, 108]. It features a modular architecture and was used to implement formal software testing methodologies.
+This project is a stereoscopic Virtual Reality (VR) skiing simulation developed for my **Bachelor of Technology in IT**[cite: 107, 108]. It features a modular architecture and was used to implement formal software testing methodologies.
 
 ## 🛠 System Architecture
 The system is divided into four primary modules:
