@@ -1,0 +1,27 @@
+Jump
+In this code we provide condition for the Game-Player jumping, in such condition whenever collided with obstruction or any Steep hill the player jumps a Physics property – Bounce which is applied through Unity is also applied to provide feel of real Jump. 
+
+using UnityEngine;
+using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
+
+public class Jump : MonoBehaviour {
+	public float strength = 5.0F;
+	
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+	
+	void OnTriggerStay(Collider other){
+		if(other.CompareTag("Player")){
+//			other.attachedRigidbody.AddForce(0.0F, strength, 0.0F, ForceMode.Impulse);
+			other.gameObject.GetComponent<RigidbodyFirstPersonController>().Jump(strength);
+		}
+	}
+}
